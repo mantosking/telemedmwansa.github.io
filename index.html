@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TELE MED MWANSA - Téléconsultation médicale professionnelle en gynéco-obstétrique, pédiatrie, chirurgie, médecine interne et neuro-psychiatrie">
+    <meta name="keywords" content="téléconsultation, médecin, gynécologie, pédiatrie, chirurgie, médecine interne, neuro-psychiatrie, MWANSA">
+    <title>TELE MED MWANSA | Téléconsultation Médicale</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">TELE MED MWANSA</div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">TELE MED</span>
+                    <span class="logo-subtitle">MWANSA</span>
+                </div>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Accueil</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#consultation" class="nav-link">Consultation IA</a></li>
+                <li><a href="#equipe" class="nav-link">Notre Équipe</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="tel:+243992292032" class="nav-phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+243 992 292 032</span>
+                </a>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                Service de téléconsultation disponible 24/7
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="title-line">Votre Santé,</span>
+                <span class="title-line gradient-text">Notre Priorité</span>
+            </h1>
+            
+            <p class="hero-description">
+                Consultez nos spécialistes en gynéco-obstétrique, pédiatrie, chirurgie, 
+                médecine interne et neuro-psychiatrie depuis le confort de votre domicile.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToConsultation()">
+                    <i class="fas fa-stethoscope"></i>
+                    Diagnostic IA Gratuit
+                    <span class="btn-ripple"></span>
+                </button>
+                <a href="#services" class="btn btn-outline">
+                    <i class="fas fa-arrow-down"></i>
+                    Découvrir nos services
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5000">0</div>
+                    <div class="stat-label">Patients satisfaits</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Spécialistes</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Spécialités</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="hero-image-container">
+                <div class="floating-card card-1">
+                    <i class="fas fa-user-md"></i>
+                    <span>Médecins disponibles</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-clock"></i>
+                    <span>Consultation rapide</span>
+                </div>
+                <div class="hero-doctor">
+                    <i class="fas fa-user-doctor"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <span class="section-tag">NOS SPÉCIALITÉS</span>
+            <h2 class="section-title">Des soins adaptés à chaque besoin</h2>
+            <p class="section-subtitle">
+                Une équipe multidisciplinaire à votre écoute pour une prise en charge complète
+            </p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card" data-specialty="gyneco">
+                <div class="service-card-inner">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3>Gynéco-Obstétrique</h3>
+                    <p>Suivi de grossesse, contraception, ménopause et pathologies gynécologiques</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Consultations prénatales</li>
+                        <li><i class="fas fa-check-circle"></i> Échographie</li>
+                        <li><i class="fas fa-check-circle"></i> Suivi hormonal</li>
+                    </ul>
+                    <button class="btn-service" onclick="openConsultation('gyneco')">
+                        <span>Commencer l'anamnèse</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="service-card" data-specialty="pediatrie">
+                <div class="service-card-inner">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3>Pédiatrie</h3>
+                    <p>Santé infantile, vaccination, croissance et maladies infantiles</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Suivi croissance</li>
+                        <li><i class="fas fa-check-circle"></i> Vaccination</li>
+                        <li><i class="fas fa-check-circle"></i> Urgences pédiatriques</li>
+                    </ul>
+                    <button class="btn-service" onclick="openConsultation('pediatrie')">
+                        <span>Commencer l'anamnèse</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="service-card" data-specialty="chirurgie">
+                <div class="service-card-inner">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-syringe"></i>
+                        </div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3>Chirurgie</h3>
+                    <p>Consultations pré et post-opératoires et avis chirurgicaux spécialisés</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Avis chirurgical</li>
+                        <li><i class="fas fa-check-circle"></i> Suivi post-op</li>
+                        <li><i class="fas fa-check-circle"></i> Planification</li>
+                    </ul>
+                    <button class="btn-service" onclick="openConsultation('chirurgie')">
+                        <span>Commencer l'anamnèse</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="service-card" data-specialty="medecine-interne">
+                <div class="service-card-inner">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-heart-pulse"></i>
+                        </div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3>Médecine Interne</h3>
+                    <p>Maladies chroniques, diagnostics complexes et suivi global</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Bilan complet</li>
+                        <li><i class="fas fa-check-circle"></i> Suivi chronique</li>
+                        <li><i class="fas fa-check-circle"></i> Prévention</li>
+                    </ul>
+                    <button class="btn-service" onclick="openConsultation('medecine-interne')">
+                        <span>Commencer l'anamnèse</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="service-card" data-specialty="neuro-psy">
+                <div class="service-card-inner">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3>Neuro-Psychiatrie</h3>
+                    <p>Troubles neurologiques, santé mentale et thérapie personnalisée</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Évaluation cognitive</li>
+                        <li><i class="fas fa-check-circle"></i> Soutien psychologique</li>
+                        <li><i class="fas fa-check-circle"></i> Suivi thérapeutique</li>
+                    </ul>
+                    <button class="btn-service" onclick="openConsultation('neuro-psy')">
+                        <span>Commencer l'anamnèse</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="section-header">
+            <span class="section-tag">COMMENT ÇA MARCHE</span>
+            <h2 class="section-title">Votre consultation en 3 étapes</h2>
+            <p class="section-subtitle">
+                Un processus simple et rapide pour obtenir un pré-diagnostic et contacter un médecin
+            </p>
+        </div>
+
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">01</div>
+                <div class="step-icon">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <h3>Anamnèse complète</h3>
+                <p>Répondez à nos questions détaillées adaptées à votre spécialité</p>
+                <div class="step-connector"></div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <div class="step-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>Analyse IA</h3>
+                <p>Notre intelligence artificielle analyse vos réponses et génère un pré-diagnostic</p>
+                <div class="step-connector"></div>
+            </div>
+
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <div class="step-icon">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h3>Contact médical</h3>
+                <p>Contactez directement nos spécialistes pour une consultation approfondie</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section id="consultation" class="consultation">
+        <div class="consultation-bg"></div>
+        
+        <div class="section-header">
+            <span class="section-tag">DIAGNOSTIC IA</span>
+            <h2 class="section-title">Anamnèse intelligente</h2>
+            <p class="section-subtitle">
+                Notre IA analyse vos symptômes pour vous fournir un pré-diagnostic personnalisé
+            </p>
+        </div>
+
+        <div class="consultation-container" id="consultationContainer">
+            <!-- Specialty Selection -->
+            <div class="specialty-selection" id="specialtySelection">
+                <h3>Choisissez votre spécialité</h3>
+                <div class="specialty-buttons">
+                    <button class="specialty-btn gyneco" onclick="openConsultation('gyneco')">
+                        <i class="fas fa-female"></i>
+                        <span>Gynéco-Obstétrique</span>
+                    </button>
+                    <button class="specialty-btn pediatrie" onclick="openConsultation('pediatrie')">
+                        <i class="fas fa-baby"></i>
+                        <span>Pédiatrie</span>
+                    </button>
+                    <button class="specialty-btn chirurgie" onclick="openConsultation('chirurgie')">
+                        <i class="fas fa-syringe"></i>
+                        <span>Chirurgie</span>
+                    </button>
+                    <button class="specialty-btn medecine-interne" onclick="openConsultation('medecine-interne')">
+                        <i class="fas fa-heart-pulse"></i>
+                        <span>Médecine Interne</span>
+                    </button>
+                    <button class="specialty-btn neuro-psy" onclick="openConsultation('neuro-psy')">
+                        <i class="fas fa-brain"></i>
+                        <span>Neuro-Psychiatrie</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Anamnesis Form -->
+            <div class="anamnese-form" id="anamneseForm" style="display: none;">
+                <div class="form-header">
+                    <button class="back-btn" onclick="backToSpecialties()">
+                        <i class="fas fa-arrow-left"></i> Retour
+                    </button>
+                    <h3 id="formTitle"></h3>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-steps" id="progressSteps"></div>
+                </div>
+
+                <div class="form-content" id="formSteps"></div>
+
+                <div class="form-navigation">
+                    <button class="nav-btn prev-btn" id="prevBtn" onclick="previousStep()" style="display: none;">
+                        <i class="fas fa-chevron-left"></i> Précédent
+                    </button>
+                    <button class="nav-btn next-btn" id="nextBtn" onclick="nextStep()">
+                        Suivant <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="nav-btn submit-btn" id="submitBtn" onclick="submitAnamnese()" style="display: none;">
+                        <i class="fas fa-magic"></i> Obtenir le diagnostic
+                    </button>
+                </div>
+            </div>
+
+            <!-- Results -->
+            <div class="diagnostic-result" id="diagnosticResult" style="display: none;">
+                <div class="result-header">
+                    <i class="fas fa-check-circle result-icon"></i>
+                    <h3>Analyse terminée</h3>
+                    <p>Voici votre pré-diagnostic basé sur l'analyse IA</p>
+                </div>
+
+                <div class="diagnostic-card" id="diagnosticCard"></div>
+
+                <div class="result-actions">
+                    <button class="btn btn-primary" onclick="backToSpecialties()">
+                        <i class="fas fa-redo"></i> Nouvelle analyse
+                    </button>
+                    <button class="btn btn-accent" onclick="showContactModal()">
+                        <i class="fas fa-phone-alt"></i> Contacter un médecin
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="equipe" class="team">
+        <div class="section-header">
+            <span class="section-tag">NOTRE ÉQUIPE</span>
+            <h2 class="section-title">Des spécialistes à votre écoute</h2>
+            <p class="section-subtitle">
+                Une équipe médicale expérimentée et disponible pour vous accompagner
+            </p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-user-doctor"></i>
+                    <div class="team-status online"></div>
+                </div>
+                <div class="team-info">
+                    <h3>Dr. Mwansa</h3>
+                    <span class="team-specialty">Gynéco-Obstétrique</span>
+                    <p>15 ans d'expérience</p>
+                    <div class="team-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-user-doctor"></i>
+                    <div class="team-status online"></div>
+                </div>
+                <div class="team-info">
+                    <h3>Dr. Kabwe</h3>
+                    <span class="team-specialty">Pédiatrie</span>
+                    <p>12 ans d'expérience</p>
+                    <div class="team-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.7</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-user-doctor"></i>
+                    <div class="team-status online"></div>
+                </div>
+                <div class="team-info">
+                    <h3>Dr. Tshibangu</h3>
+                    <span class="team-specialty">Neuro-Psychiatrie</span>
+                    <p>20 ans d'expérience</p>
+                    <div class="team-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-user-doctor"></i>
+                    <div class="team-status busy"></div>
+                </div>
+                <div class="team-info">
+                    <h3>Dr. Mulenga</h3>
+                    <span class="team-specialty">Chirurgie</span>
+                    <p>18 ans d'expérience</p>
+                    <div class="team-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>4.5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-header">
+            <span class="section-tag">TÉMOIGNAGES</span>
+            <h2 class="section-title">Ce que disent nos patients</h2>
+            <p class="section-subtitle">
+                La satisfaction de nos patients est notre plus grande récompense
+            </p>
+        </div>
+
+        <div class="testimonials-slider">
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Excellent service de téléconsultation. Le diagnostic IA m'a orienté vers le bon spécialiste rapidement."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>Marie K.</h4>
+                        <span>Patiente</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Très pratique pour les consultations de suivi. Les médecins sont à l'écoute et très professionnels."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>Jean-Paul M.</h4>
+                        <span>Patient</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">
+                    "Le système d'anamnèse est très complet. J'ai pu obtenir un pré-diagnostic en quelques minutes."
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="author-info">
+                        <h4>Sophie L.</h4>
+                        <span>Patiente</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="section-header">
+                    <span class="section-tag">CONTACT</span>
+                    <h2 class="section-title">Contactez-nous</h2>
+                    <p class="section-subtitle">
+                        Notre équipe est disponible pour répondre à toutes vos questions
+                    </p>
+                </div>
+
+                <div class="contact-details">
+                    <a href="tel:+243992292032" class="contact-detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Téléphone</h4>
+                            <p>+243 992 292 032</p>
+                            <span>Appelez-nous</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:mwansaestime@gmail.com" class="contact-detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Email</h4>
+                            <p>mwansaestime@gmail.com</p>
+                            <span>Écrivez-nous</span>
+                        </div>
+                    </a>
+
+                    <div class="contact-detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Horaires</h4>
+                            <p>Lun - Sam : 8h - 20h</p>
+                            <span>Dim : 9h - 17h</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-card">
+                        <div class="detail-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="detail-content">
+                            <h4>Localisation</h4>
+                            <p>MWANSA</p>
+                            <span>Consultation en ligne</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <div class="contact-form-card">
+                    <h3>Envoyez-nous un message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="name" placeholder="Votre nom" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" placeholder="votre@email.com" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialty">Spécialité concernée</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-stethoscope"></i>
+                                <select id="specialty" required>
+                                    <option value="">Choisissez une spécialité</option>
+                                    <option value="gyneco">Gynéco-Obstétrique</option>
+                                    <option value="pediatrie">Pédiatrie</option>
+                                    <option value="chirurgie">Chirurgie</option>
+                                    <option value="medecine-interne">Médecine Interne</option>
+                                    <option value="neuro-psy">Neuro-Psychiatrie</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-comment"></i>
+                                <textarea id="message" rows="5" placeholder="Décrivez votre demande..." required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le message
+                            <span class="btn-ripple"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>TELE MED MWANSA</span>
+                    </div>
+                    <p>Votre plateforme de téléconsultation médicale de confiance. Des soins de qualité accessibles à tous.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Gynéco-Obstétrique</a></li>
+                        <li><a href="#services">Pédiatrie</a></li>
+                        <li><a href="#services">Chirurgie</a></li>
+                        <li><a href="#services">Médecine Interne</a></li>
+                        <li><a href="#services">Neuro-Psychiatrie</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Liens utiles</h4>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#consultation">Consultation IA</a></li>
+                        <li><a href="#equipe">Notre équipe</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#">Confidentialité</a></li>
+                        <li><a href="#">Conditions d'utilisation</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2024 TELE MED MWANSA. Tous droits réservés.</p>
+                <p>Développé avec <i class="fas fa-heart"></i> pour votre santé</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeContactModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <i class="fas fa-phone-alt modal-icon"></i>
+                <h3>Contacter un médecin</h3>
+                <p>Choisissez votre mode de contact préféré</p>
+            </div>
+            <div class="modal-body">
+                <a href="tel:+243992292032" class="modal-contact-btn phone">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <strong>Appeler</strong>
+                        <span>+243 992 292 032</span>
+                    </div>
+                </a>
+                <a href="mailto:mwansaestime@gmail.com" class="modal-contact-btn email">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <span>mwansaestime@gmail.com</span>
+                    </div>
+                </a>
+                <a href="https://wa.me/243992292032" class="modal-contact-btn whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <span>+243 992 292 032</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="tel:+243992292032" class="float-btn phone-btn" title="Appeler">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="mailto:mwansaestime@gmail.com" class="float-btn email-btn" title="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/243992292032" class="float-btn whatsapp-btn" title="WhatsApp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
